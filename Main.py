@@ -13,8 +13,6 @@ def main():
         print("Dimensions are inconsistent!")
 
 
-import numpy as np
-
 def deadlock_detect(allocation, available, request):
     """
     Detects deadlock in a system using the Banker's algorithm.
@@ -80,6 +78,7 @@ def deadlock_detect(allocation, available, request):
         print("No deadlock detected!")
         print("Safe sequence:")
         print(list_sequence)
+
 
 def check_dimensions(allocation, available, request):
     """
