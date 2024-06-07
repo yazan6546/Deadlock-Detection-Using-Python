@@ -64,13 +64,13 @@ def check_dimensions(allocation, available, request):
 
 
 def read_file():
-    df = pandas.read_csv("Allocation.csv")
+    df = pandas.read_csv("Inputs/Allocation.csv")
     allocation = np.delete(df.values, 0, axis=1).astype(int)
 
-    available = pandas.read_csv("Available.csv")
+    available = pandas.read_csv("Inputs/Available.csv")
     available = available.values.astype(int)
 
-    df = pandas.read_csv("Request.csv")
+    df = pandas.read_csv("Inputs/Request.csv")
     request = np.delete(df.values, 0, axis=1)
     request = request.astype(int)
 
